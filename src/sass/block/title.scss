@@ -1,0 +1,9 @@
+.title {
+  text-transform: uppercase;
+
+  @include ph {
+      font-size: 14px;
+      color: antiquewhite;
+   }
+}
+

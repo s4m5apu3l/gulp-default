@@ -1,0 +1,10 @@
+.title {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1440px) {
+ .title {
+   font-size: 14px;
+   color: antiquewhite;
+ }
+}
