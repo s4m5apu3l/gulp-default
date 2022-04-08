@@ -1,27 +1,62 @@
+
 $base-font-size: 22px;
+$color-gold: #F1CDB3;
 
 @mixin ph  {
   @media (max-width: 1440px) {
     @content;
   }
 }
+@import 'fonts/fonts.scss';
+@import 'block/reset.scss';
 
-* {
-  box-sizing: border-box;
-}
 
 body {
-  background-color: #f9f9f9;
   font-size: $base-font-size;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Georgia', sans-serif;
   line-height: 1.5;
   
   @include ph {
-      background-color: black;
+      background-color: rgb(141, 138, 138);
   }
   
 }
 
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 40px;
+  height: auto;
+  margin: 0 auto;
+}
 
-@import 'block/news.scss';
-@import 'block/title.scss';
+.white {
+  max-height: 611px;
+  height: 100%
+}
+
+.grey {
+  max-height: 877px;
+  height: 100%;
+  background-color: #F6F6F6;
+}
+
+.button {
+  padding: 15px 45px;
+  background-color: $color-gold;
+  color: black;
+  border: unset;
+  border-radius: 100px;
+  font-size: 17px;
+  text-align: center;
+}
+
+@import 'block/header.scss';
+
+@import 'block/hero.scss';
+
+@import 'block/about.scss';
+
+@import 'block/pets.scss';
+
+@import 'block/footer.scss';

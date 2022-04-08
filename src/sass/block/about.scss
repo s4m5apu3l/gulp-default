@@ -1,0 +1,26 @@
+.white {
+  padding: 80px 175px 100px 175px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    .about-text {
+      max-width: 430px;
+      width: 100%;
+    }
+      h3 {
+        font-size: 35px;
+        max-width: 370px;
+        width: 100%;
+        white-space: break-spaces;
+        color: #545454;
+      }
+      p {
+        padding-top: 25px;
+        font-size: 15px;
+        line-height: 160%;
+        color: #545454;
+      }
+}

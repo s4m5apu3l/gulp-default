@@ -1,0 +1,19 @@
+
+
+.pets-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  
+  .pets-title {
+
+    h3 {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #545454;
+    }
+  }
+}

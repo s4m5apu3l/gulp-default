@@ -1,14 +1,41 @@
 extends layout/app
 
 block page
+  .bg
     include chunk/header
+    main.main 
+        section.hero
+          .wrapper 
+            .hero-content
+              .hero-title 
+                h1 Not only people need a house
+                p We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!
+                .hero-btn
+                  a(href='#').hero-btn.button  Make a friend
+              .hero-img 
+                img(src="/img/hero-dog.png" alt="hero-dog-image")
 
-    h1.title main !!!!
-    
-    ul.news
-      each item in news 
-        li= item.name
-    
-
+        section.white
+          .wrapper   
+            .about-content 
+              img(src="/img/about-pets.png" alt="about-pets.png")
+              .about-text 
+                h3 About the shelter “Cozy House”
+                p Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.
+                p We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.
+        section.grey
+          .wrapper 
+            .pets-content 
+              .pets-title 
+                h3 Our friends who are looking for a house
+              .pets-swiper.swiper
+                .swiper-wrapper   
+                  .swiper-slide.pet-card
+                    img(src="img/pets-katrine.jpg", alt="pets-katrine.jpg")
+                  .swiper-slide.pet-card
+                    img(src="img/pets-jennifer.jpg", alt="pets-jennifer.jpg")
+                  .swiper-slide.pet-card
+                    img(src="img/pets-woody.jpg", alt="pets-woody.jpg")
+              a(href='#').pets-btn.button Get to know the rest
     include chunk/footer
 
