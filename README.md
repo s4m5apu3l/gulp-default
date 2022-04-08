@@ -1,3 +1,3 @@
 # gulp-default
 
-##gulp dev for start 
+gulp dev for start 
